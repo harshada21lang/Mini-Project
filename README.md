@@ -9,8 +9,9 @@ A Tin Dog website built using HTML5, CSS3, Framework Bootstrap and little bit of
 ## Features
 * Implemented using [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/).
 * Used [font-awesome](https://fontawesome.com/) icons.
+* Used Carousel for sliding images. 
 * Hover effects on the icons.
-* Window scroll top effect
+* Window scroll top effect.
 ## Requirements
 1. HTML
 2. CSS
