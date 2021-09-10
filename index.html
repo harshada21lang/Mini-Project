@@ -228,28 +228,40 @@
   <!-- Footer -->
 
   <footer id="footer">
-    <i class="social-icons fab fa-facebook-f"></i>
-    <i class="social-icons fab fa-twitter"></i>
-    <i class="social-icons fab fa-instagram
-    "></i>
-    <i class="social-icons fas fa-envelope"></i>
+    <i class="social-icons fab fa-facebook-f fa-2x"></i>
+    <i class="social-icons fab fa-twitter fa-2x"></i>
+    <i class="social-icons fab fa-instagram fa-2x"></i>
+    <i class="social-icons fas fa-envelope fa-2x"></i>
+
+
+
     <p id="copyright">© Copyright 2021 TinDog</p>
+    <p id="copyright">Made with <i style="color:red;" class="fas fa-heart"></i> by Harshada Abhale</p>
 
     <a href="#title"><i class="fas fa-angle-up" id="scroll-top"></i></a>
   </footer>
 </body>
 
 <script>
-  window.onscroll = () =>{
+  const scrollTop = document.querySelector('#scroll-top');
+  
+  window.onscroll = () => {
+      scrollFunction();
+  }
 
-    navbar[0].classList.remove('active');
-
-    if(window.scrollY > 100){
-      document.querySelector('#scroll-top').classList.add('active');
+  function scrollFunction(){
+    if(document.scrollY > 200 || document.documentElement.scrollTop > 200){
+      scrollTop.style.display = "block";
     }else{
-      document.querySelector('#scroll-top').classList.remove('active');
+      scrollTop.style.display = "none";
     }
   }
+  
+  function moveTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
 </script>
 
 </html>
