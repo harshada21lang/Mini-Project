@@ -1,5 +1,5 @@
 # Tin Dog Website
-* [About this Project](About)
+* [About this Project](#About)
 * Features
 * Requirements
 * Technical information
