@@ -29,15 +29,15 @@
     <div class="container-fluid">
 
       <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark"> 
-        <a class="navbar-brand" href="">Tindog</a>
+      <nav class="navbar navbar-expand-lg navbar-dark "> 
+        <a class="navbar-brand" href="">tindog</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#footer">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#pricing">Pricing</a>
@@ -48,8 +48,6 @@
           </ul>
         </div>
       </nav>
-
-
       <!-- Title -->
       <div class="row">
         <div class="col-lg-6">
@@ -195,6 +193,38 @@
 
   </section>
 
+  <!-- contact section -->
+  <section class="contact" id="contact">    
+    <center><h1 class="heading"><span>Contact </span>Us</h1></center>
+    <div class="row">
+      <div class="contact-box col-lg-6">
+      <img src="images/istockphoto-1094310798-612x612.jpg" id="dog" alt="">
+    </div>
+    <div class=" contact-box col-lg-6" id="form">
+      <form action="">
+        <h3 class="form-title">Get In Touch</h3>
+        <br>
+        <div class="inputBox">
+          <span class="fas fa-user"></span>
+          <input type="text" placeholder="Your Name" class="input">
+        </div>
+        <br>
+        <div class="inputBox">
+          <span class="fas fa-envelope"></span>
+          <input type="email" placeholder="Email" class="input">
+        </div>
+        <br>
+        <div class="inputBox">
+          <span class="fas fa-phone"></span>
+          <input type="number" placeholder="Mobile No" class="input">
+        </div>
+        <br>
+        <button type="button" class="btn btn-danger">Contact now</button>
+      </form>
+    </div>
+    </div>
+  </section>
+
   <!-- Footer -->
 
   <footer id="footer">
@@ -203,12 +233,23 @@
     <i class="social-icons fab fa-instagram
     "></i>
     <i class="social-icons fas fa-envelope"></i>
-    <p>© Copyright 2021 TinDog</p>
+    <p id="copyright">© Copyright 2021 TinDog</p>
 
-    <a href="#title" class="arrow"><i class="fas fa-arrow-up fa-3x"></i></a>
+    <a href="#title"><i class="fas fa-angle-up" id="scroll-top"></i></a>
   </footer>
-
-
 </body>
+
+<script>
+  window.onscroll = () =>{
+
+    navbar[0].classList.remove('active');
+
+    if(window.scrollY > 100){
+      document.querySelector('#scroll-top').classList.add('active');
+    }else{
+      document.querySelector('#scroll-top').classList.remove('active');
+    }
+  }
+</script>
 
 </html>
