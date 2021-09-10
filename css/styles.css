@@ -180,9 +180,9 @@ margin-top: 20px;
 }
 
 #dog{
-  border-radius: 20px;
   margin: 0 auto;
   width:100%;
+padding-top: 50px;
 }
 
 
@@ -193,14 +193,17 @@ margin-top: 20px;
 }
 .contact-box{ 
   text-align: center;
-  padding: 3%;
+  padding: 5%;
 }
 
 .input{
   width: 50%;
+  border: black;
 }
+
 .btn1{
 background-color:#ff7f50;
+border:none;
 }
 
 .btn1:hover{
