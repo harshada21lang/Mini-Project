@@ -5,7 +5,7 @@
 * [Requirements](#Requirements)
 * [Technical Information](#Technical-Information)
 ## About
-A Tin Dog website built using HTML5, CSS3, Framework Bootstrap and little bit of JavaScript for toggling the navigation bar and scroll top effect. Tried to include all sections tha a website can have.
+A Tin Dog website built using HTML5, CSS3, Framework Bootstrap and little bit of JavaScript for toggling the navigation bar and scroll top effect. Tried to include all sections that a website can have.
 ## Features
 * Implemented using [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/).
 * Used [font-awesome](https://fontawesome.com/) icons.
